@@ -59,7 +59,6 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-
     }
 
     .navbar {
@@ -96,12 +95,13 @@
 
   <div class="navbar">
     <a href="/index.html">Home</a>
-    <a href="/login - Alysha/login.html">Account</a>
-    <a href="/Insurance - Jimi/insurance.html">Insurance</a>
-    <a href="/scheme - Javier/schemes.html">Scheme and subsidies</a>
-    <a href="/payment - Silin/payment.html">Payment</a>
-    <a href="/service - Jerald/services.html">Services</a>
+    <a href="/login-Alysha/login.html">Account</a>
+    <a href="/Insurance-Jimi/insurance.html">Insurance</a>
+    <a href="/scheme-Javier/schemes.html">Scheme and subsidies</a>
+    <a href="/payment-Silin/payment.html">Payment</a>
+    <a href="/service-Jerald/services.html">Services</a>
   </div>
+
 
 </body>
 
@@ -111,35 +111,40 @@
 
 <body>
 
-  <h2>Our Dates available</h2>
+  <h2>Short term care ward</h2>
   <p></p>
   <p>For you, for me, for everyone</p>
-  <p id="hello">We have up to a week for booking reservations in advance.
+  <p id="hello">We believe in making the patient comfortable, allowing for the choices of their preferences if the
+    situation allows it.
   </p>
-  <h2>Choose your preferred date from the options below
+  <h2>Choose your timing.
   </h2>
 
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <h3>Doctor Kang</h3>
+
 
         <img src="https://thehealthcareinsights.com/wp-content/uploads/2021/02/Online-doctor-consultation.jpg"
           width="450" height="200">
-        <h1>Mr Kang's, available dates:
-        </h1>
-        <div class="navbar">
-          <div class="dropdown">
-            <button class="dropbtn">
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="/service - Jerald/cart.html">29/7/2024</a>
-              <a href="/service - Jerald/cart.html">30/7/2024</a>
-              <a href="/service - Jerald/cart.html">31/7/2024</a>
-            </div>
+        <div class="container">
+          <div>
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" onchange="validateDates()">
+          </div>
+          <div>
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" onchange="validateDates()">
           </div>
         </div>
+
+        <a href="/service-Jerald/confirmward.html" class="button">Book now</a>
+
+      </div>
+
+    </div>
+  </div>
+
 
 
 </body>
